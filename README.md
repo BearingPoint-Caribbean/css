@@ -46,7 +46,7 @@ In a rule declaration, “selectors” are the bits that determine which element
 }
 
 [aria-hidden] {
-  /* ... */
+    /* ... */
 }
 ```
 
@@ -56,8 +56,8 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ```css
 /* some selector */ {
-  background: #f1f1f1;
-  color: #333;
+    background: #f1f1f1;
+    color: #333;
 }
 ```
 
@@ -94,14 +94,14 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 ```css
 .avatar {
-  border-radius: 50%;
-  border: 2px solid white;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
 .one,
 .selector,
 .per-line {
-  // ...
+    // ...
 }
 ```
 
@@ -151,7 +151,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: none;
+    border: none;
 }
 ```
 
@@ -159,7 +159,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: 0;
+    border: 0;
 }
 ```
 
@@ -178,9 +178,9 @@ Use `0` instead of `none` to specify that a style has no border.
 
     ```scss
     .btn-green {
-      background: green;
-      font-weight: bold;
-      // ...
+        background: green;
+        font-weight: bold;
+        // ...
     }
     ```
 
@@ -190,10 +190,10 @@ Use `0` instead of `none` to specify that a style has no border.
 
     ```scss
     .btn-green {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
-      // ...
+        background: green;
+        font-weight: bold;
+        @include transition(background 0.5s ease);
+        // ...
     }
     ```
 
@@ -203,9 +203,9 @@ Use `0` instead of `none` to specify that a style has no border.
 
     ```scss
     .btn {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
+        background: green;
+        font-weight: bold;
+        @include transition(background 0.5s ease);
 
       .icon {
         margin-right: 10px;
@@ -231,11 +231,11 @@ Mixins should be used to DRY up your code, add clarity, or abstract complexity--
 
 ```scss
 .page-container {
-  .content {
-    .profile {
-      // STOP!
+    .content {
+        .profile {
+            // STOP!
+        }
     }
-  }
 }
 ```
 
