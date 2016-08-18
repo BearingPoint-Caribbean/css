@@ -11,7 +11,7 @@
   1. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
-    - [Avoid @import][#at-import]
+    - [Avoid @import](#avoid-import)
     - [OOCSS](#oocss)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
