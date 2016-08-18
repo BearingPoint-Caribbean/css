@@ -11,6 +11,7 @@
   1. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
+    - [Avoid @import][#at-import]
     - [OOCSS](#oocss)
     - [ID Selectors](#id-selectors)
     - [JavaScript hooks](#javascript-hooks)
@@ -75,6 +76,11 @@ Finally, properties are what give the selected elements of a rule declaration th
 * In properties, put a space after, but not before, the `:` character.
 * Put closing braces `}` of rule declarations on a new line
 * Put blank lines between rule declarations
+* Comma-separated property values should include a space after each comma (e.g., `box-shadow`).
+* Don't include spaces after commas within `rgb()`, `rgba()`, `hsl()`, `hsla()`, or `rect()` values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).
+* Use shorthand hex values where available, e.g., #fff instead of #ffffff.
+* Quote attribute values in selectors, e.g., input[type="text"]. They’re [only optional in some cases](https://mathiasbynens.be/notes/unquoted-attribute-values#css), and it’s a good practice for consistency.
+* Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`.
 
 **Bad**
 
@@ -104,6 +110,14 @@ Finally, properties are what give the selected elements of a rule declaration th
     // ...
 }
 ```
+### Avoid @import
+Compared to `<link>`s, `@import` is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:
+
+* Use multiple `<link>` elements
+* Compile your CSS with a preprocessor like Sass or Less into a single file
+* Concatenate your CSS files with features provided in Rails, Jekyll, and other environments
+
+For more information, [read this article by Steve Souders](http://www.stevesouders.com/blog/2009/04/09/dont-use-import/).
 
 ### Comments
 
