@@ -1,6 +1,6 @@
-# Airbnb CSS / Sass Styleguide
+# BearingPoint CSS / Sass Styleguide
 
-*A mostly reasonable approach to CSS and Sass*
+*A mostly reasonable approach to CSS and Sass (based on Airbnb's style guide)*
 
 ## Table of Contents
 
